@@ -1,0 +1,61 @@
+CREATE KEYSPACE IF NOT EXISTS player_data
+WITH REPLICATION = {
+  'class' : 'SimpleStrategy',
+  'replication_factor' : 3
+};
+
+CREATE TABLE IF NOT EXISTS player_data.player_stats_a_m ( 
+  stats_type text PRIMARY KEY,
+  sabonis float,
+  valanciunas float,
+  jokic float,
+  doncic float,
+  porzingis float,
+  james float,
+  durant float,
+  curry float
+);
+
+CREATE TABLE IF NOT EXISTS player_data.player_stats_n_z ( 
+  stats_type text PRIMARY KEY,
+  sabonis float,
+  valanciunas float,
+  jokic float,
+  doncic float,
+  porzingis float,
+  james float,
+  durant float,
+  curry float
+);
+
+CREATE KEYSPACE IF NOT EXISTS team_data
+WITH REPLICATION = {
+  'class' : 'SimpleStrategy',
+  'replication_factor' : 3
+};
+
+CREATE TABLE IF NOT EXISTS team_data.team_stats_a_m ( 
+  stats_type text PRIMARY KEY,
+  bucks float,
+  mavericks float,
+  lakers float,
+  celtics float,
+  nets float,
+  warriors float,
+  grizzlies float,
+  heat float
+);
+
+CREATE TABLE IF NOT EXISTS team_data.team_stats_n_z ( 
+  stats_type text PRIMARY KEY,
+  bucks float,
+  mavericks float,
+  lakers float,
+  celtics float,
+  nets float,
+  warriors float,
+  grizzlies float,
+  heat float
+);
+
+
