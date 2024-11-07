@@ -1,0 +1,6 @@
+com\mycompany\idb\PlayerStatsDelete.class
+com\mycompany\idb\PlayerStatsUpdate.class
+com\mycompany\idb\PlayerStatsSelect.class
+com\mycompany\idb\CassandraConnector.class
+com\mycompany\idb\PlayerStatsInsert.class
+com\mycompany\idb\Idb.class
