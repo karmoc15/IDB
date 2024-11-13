@@ -38,6 +38,6 @@ public class PlayerStatsUpdate {
         // Execute the update statement
         session.execute(SimpleStatement.newInstance(query, sabonis, valanciunas, jokic,
                 doncic, porzingis, james, durant, curry, statsType));
-        System.out.println("Data updated successfully");
+        System.out.println("Data updated successfully in " + tableName);
     }
 }
